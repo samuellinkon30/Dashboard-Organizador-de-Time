@@ -1,0 +1,12 @@
+
+.create_item_block {
+    width: 600px;
+    background-color: #F6F6F6;
+    padding: 20px 40px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.form_global{
+    text-align: left;
+}

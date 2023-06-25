@@ -1,0 +1,12 @@
+.item-form{
+    display: block;
+    width: 100%;
+}
+.item-form input{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 10px 1px #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 25px;
+}

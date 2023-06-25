@@ -1,0 +1,27 @@
+.card_block{
+    width: 300px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 0px #d6d5d5;
+    min-height: 300px;
+    position: relative;
+}
+.img_user{
+    border-radius: 50%;
+    width: 150px;
+    z-index: 99;
+}
+.card_info{
+    background-color: white;
+    height: 200px;
+    transform: translate(0px, 80px);
+}
+.card_info h2{
+  padding-top: 75px;
+}
+.img_user {
+    position: absolute;
+    top: 15%;
+    left: 18%;
+}
