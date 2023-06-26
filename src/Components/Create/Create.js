@@ -8,6 +8,7 @@ const Create = () => {
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
 
     const Times = [
         'Programação',
@@ -22,7 +23,8 @@ const Create = () => {
     const obg = [
         nome,
         cargo,
-        imagem
+        imagem,
+        time
     ]
     const submitform = (e) => {
         e.preventDefault();
@@ -55,8 +57,13 @@ const Create = () => {
                     enviarDados={valor=>setImagem(valor)} >
                 </Campos>   
                
-                <Select Times={Times} titulo='Time'></Select>
-                <input type='submit' value='Enivar'></input>
+                <Select 
+                    Times={Times} 
+                    titulo='Time'
+                    valor={time}
+                    enviarDados={valor=>setTime(valor)}>
+                </Select>
+                <input type='submit' value='Enivar' className='btn-enviar'></input>
             </form>
         </div>
     )
