@@ -15,8 +15,8 @@ const Select = (props) => {
             <select onChange={aoSelecionar} className='select' value={props.valor}>
                {
                    props.Times.map(time =>
-                     <option key={time}>
-                        {time}
+                     <option key={time.nome}>
+                        {time.nome}
                     </option>
                     )
                }  

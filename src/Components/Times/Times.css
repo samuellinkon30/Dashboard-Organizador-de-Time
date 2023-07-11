@@ -1,7 +1,12 @@
-.times{
-    max-width: 1000px;
-    margin: 0 auto;
+.times h2{
+    
+    margin: 0; 
+}
+.times {
+    padding: 20px 0;
 }
 .cards{
     display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
 }

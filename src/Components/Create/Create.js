@@ -3,32 +3,21 @@ import Campos from '../Campos/Campos'
 import Select from '../Select/Select'
 import './Create.css'
 
-const Create = () => {
+const Create = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
-    const Times = [
-        'Programação',
-        'Front-end',
-        'Data Science',
-        'DevOps',
-        'Ux / Ui',
-        'Mobile',
-        'P&D',
-    ]
-
-    const obg = [
-        nome,
-        cargo,
-        imagem,
-        time
-    ]
     const submitform = (e) => {
-        e.preventDefault();
-       console.log(obg)
+        e.preventDefault()
+        props.aocadadstrar({
+            nome, 
+            cargo,
+            imagem,
+            time
+        })
     }
 
 
@@ -58,12 +47,12 @@ const Create = () => {
                 </Campos>   
                
                 <Select 
-                    Times={Times} 
+                    Times={props.times} 
                     titulo='Time'
                     valor={time}
                     enviarDados={valor=>setTime(valor)}>
                 </Select>
-                <input type='submit' value='Enivar' className='btn-enviar'></input>
+                <input type='submit' value='Criar Card' className='btn-enviar'></input>
             </form>
         </div>
     )
